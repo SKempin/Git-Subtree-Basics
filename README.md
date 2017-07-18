@@ -17,13 +17,15 @@ Let's say you already have a git repository with at least one commit. You can ad
 
 This will clone `https://github.com/newfivefour/vimrc.git` into the directory `subtreeDirectory`.
 
+
+***
 ## Pull in new subtree commits
 If you want to pull in any new commits to the subtree from the remote, issue the same command as above, replacing `add` for `pull`:
 
 `git subtree pull --prefix subtreeDirectory https://github.com/newfivefour/vimrc.git master --squash`
 
 
-
+***
 ## Updating / Pushing to the subtree remote repository
 If you make a change to anything in `subtreeDirectory` the commit will be stored in the **host repository** and its logs. That is the biggest change from submodules.
 
@@ -31,6 +33,8 @@ If you now want to update the subtree remote repository with that commit, you mu
 
 `git subtree push --prefix subtreeDirectory https://github.com/newfivefour/vimrc.git master`
 
+
+***
 ## Subtree issues
 
 * You can't easily list the subtrees in your project
