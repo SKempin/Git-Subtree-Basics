@@ -1,6 +1,12 @@
 # Git Subtree Basics
 If you hate `git submodule`, then you may want to give `git subtree` a try.
 
+## Background
+When you want to use a subtree, you add the subtree to an existing repository where the subtree is a reference to another repository url and branch/tag. This `add` command adds all the code and files into the main repository locally; it's not just a reference to a remote repo. 
+
+When you stage and commit files for the main repo, it will add all of the remote files in the same operation. The subtree checkout will pull all the files in one pass, so there is no need to try and connect to another repo to get the portion of subtree files, because they were already included in the main repo.
+
+## Adding a subtree
 Let's say you already have a git repository with at least one commit. You can add another repository into this respository like this:
 
 1. Specify you want to add a subtree
@@ -37,10 +43,13 @@ If you now want to update the subtree remote repository with that commit, you mu
 ***
 ## Subtree issues
 
+ * It isn't readily apparent that part of the main repo is built from a subtree
 * You can't easily list the subtrees in your project
 * You can't, at least easily, list the remote repositories of the subtrees
 * The logs are slightly confusing when you update the host repository with subtree commits, then push the subtree to its host, and then pull the subtree.
 
 Other than that, they're looking nicer than submodules.
 
-*[Amended from original article](https://newfivefour.com/git-subtree-basics.html)*
+*Amended from original articles:
+1. https://newfivefour.com/git-subtree-basics.html
+2. https://docs.acquia.com/articles/using-git-subtrees-instead-git-submodules*
