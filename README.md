@@ -50,6 +50,6 @@ If you now want to update the subtree remote repository with that commit, you mu
 
 Other than that, they're looking nicer than submodules.
 
-*Amended from original articles:
+*Amended from original articles:*
 1. https://newfivefour.com/git-subtree-basics.html
-2. https://docs.acquia.com/articles/using-git-subtrees-instead-git-submodules*
+2. https://docs.acquia.com/articles/using-git-subtrees-instead-git-submodules
