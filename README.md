@@ -43,9 +43,9 @@ If you now want to update the subtree remote repository with that commit, you mu
 ***
 ## Subtree issues
 
- * It isn't readily apparent that part of the main repo is built from a subtree
-* You can't easily list the subtrees in your project
-* You can't, at least easily, list the remote repositories of the subtrees
+ * It isn't readily apparent that part of the main repo is built from a subtree.
+* You can't easily list the subtrees in your project.
+* You can't, at least easily, list the remote repositories of the subtrees.
 * The logs are slightly confusing when you update the host repository with subtree commits, then push the subtree to its host, and then pull the subtree.
 
 Other than that, they're looking nicer than submodules.
